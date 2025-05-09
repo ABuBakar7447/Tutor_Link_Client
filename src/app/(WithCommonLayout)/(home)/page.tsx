@@ -25,20 +25,16 @@ export default async function Home() {
   return (
     <div className="">
       <main className="">
+        {/* homepage section */}
         <HeroSection tutors = {tutors}/>
         <WhyChooseUs></WhyChooseUs>
         <HowItWorks></HowItWorks>
-        
         <TopTutors tutors = {tutors}></TopTutors>
-        
         <BrowseBySubject></BrowseBySubject>
-        
         <SuccessStories></SuccessStories>
         <TutorStatistics></TutorStatistics>
         <TutorTestimonials></TutorTestimonials>
-
         <PartnerInstitutions></PartnerInstitutions>
-
         <NewsletterOrBlog></NewsletterOrBlog>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
