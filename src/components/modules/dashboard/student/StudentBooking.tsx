@@ -40,8 +40,8 @@ const StudentBookings = () => {
   if (!user) return <div><Loader/></div>;
 
   return (
-    <Table>
-      <TableCaption>Your Bookings</TableCaption>
+    <Table className="pt-24">
+      <TableCaption className="pt-5">Your Bookings</TableCaption>
       <TableHeader>
         <TableRow>
           <TableHead>Date</TableHead>

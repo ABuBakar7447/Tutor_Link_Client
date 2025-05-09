@@ -19,7 +19,7 @@ console.log(user);
   }
 
   return (
-    <div className="flex justify-center w-full py-10">
+    <div className="flex justify-center w-full pt-20">
       <Card className="w-full max-w-md p-6 text-center space-y-4">
         <div className="flex flex-col items-center gap-4">
           <Avatar className="w-24 h-24">

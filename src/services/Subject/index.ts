@@ -1,8 +1,10 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-"use server"
+"use server";
 export const getSubject = async () => {
   try {
-    const res = await fetch(`https://tutorial-link-backend.vercel.app/api/subject`);
+    const res = await fetch(
+      `https://tutorial-link-backend-ten.vercel.app/api/subject`
+    );
     const data = await res.json();
     return data;
   } catch (error) {
@@ -11,15 +13,18 @@ export const getSubject = async () => {
   }
 };
 
-export const createSubject = async (subject:any) => {
+export const createSubject = async (subject: any) => {
   try {
-    const res = await fetch(`https://tutorial-link-backend.vercel.app/api/subject`, {
-      method: "POST",
-      body: JSON.stringify(subject),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const res = await fetch(
+      `https://tutorial-link-backend-ten.vercel.app/api/subject`,
+      {
+        method: "POST",
+        body: JSON.stringify(subject),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
     const data = await res.json();
     return data;
   } catch (error) {

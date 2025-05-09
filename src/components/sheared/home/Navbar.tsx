@@ -343,7 +343,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="flex items-center justify-between flex-wrap p-4 shadow-md relative">
+    <nav className="fixed top-0 left-0 w-full bg-white z-50 flex items-center justify-between flex-wrap p-4 shadow-md">
       {/* Logo */}
       <div className="text-2xl font-bold text-blue-600">
         <Link href="/">TutorLink 🎓</Link>
@@ -351,20 +351,6 @@ export default function Navbar() {
 
       {/* Desktop Menu */}
       <div className="hidden md:flex items-center gap-4">
-        {menuItems.map((item) => (
-          <Link key={item.href} href={item.href}>
-            <Button
-              variant="outline"
-              className={
-                pathName === item.href
-                  ? "bg-blue-400 text-white font-bold"
-                  : ""
-              }
-            >
-              {item.label}
-            </Button>
-          </Link>
-        ))}
 
         {/* Home Dropdown */}
         <div className="relative inline-block text-left">
@@ -392,6 +378,25 @@ export default function Navbar() {
             </div>
           )}
         </div>
+
+        {/* other menu */}
+        {menuItems.map((item) => (
+          <Link key={item.href} href={item.href}>
+            <Button
+              variant="outline"
+              className={
+                pathName === item.href
+                  ? "bg-blue-400 text-white font-bold"
+                  : ""
+              }
+            >
+              {item.label}
+            </Button>
+          </Link>
+        ))}
+
+        
+        
       </div>
 
       {/* Avatar */}

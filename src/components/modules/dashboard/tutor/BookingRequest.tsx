@@ -57,7 +57,7 @@ const BookingRequest = () => {
   if (!user) return <div><Loader/></div>;
 
   return (
-    <Table>
+    <Table className="pt-20">
       <TableCaption>Your recent booking requests</TableCaption>
       <TableHeader>
         <TableRow>

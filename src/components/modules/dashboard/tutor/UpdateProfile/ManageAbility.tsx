@@ -98,7 +98,7 @@ export default function ManageAvailability() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="space-y-6 max-w-3xl mx-auto p-6 rounded-xl shadow border w-full"
+      className="space-y-6 max-w-3xl mx-auto p-6 rounded-xl shadow border w-full pt-24"
     >
       {/* Availability Slots */}
       <div className="flex flex-col gap-4">

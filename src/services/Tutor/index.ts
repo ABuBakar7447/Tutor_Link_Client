@@ -3,7 +3,7 @@ export const completeProfile = async (tutorData: any): Promise<any> => {
   // console.log(`${process.env.BACKEND_URL}`);
 
   try {
-    const res = await fetch(`https://tutorial-link-backend.vercel.app/api/tutor`, {
+    const res = await fetch(`https://tutorial-link-backend-ten.vercel.app/api/tutor`, {
       method: "POST",
       body: JSON.stringify(tutorData),
       headers: {
@@ -29,7 +29,7 @@ export const updateTutorProfile = async (id: string , tutorData: any): Promise<a
   // console.log(`${process.env.BACKEND_URL}`);
 
   try {
-    const res = await fetch(`https://tutorial-link-backend.vercel.app/api/tutor/${id}`, {
+    const res = await fetch(`https://tutorial-link-backend-ten.vercel.app/api/tutor/${id}`, {
       method: "PATCH",
       body: JSON.stringify(tutorData),
       headers: {
@@ -63,7 +63,7 @@ export const getTutor = async (
 
 
   try {
-    const res = await fetch(`https://tutorial-link-backend.vercel.app/api/tutor`);
+    const res = await fetch(`https://tutorial-link-backend-ten.vercel.app/api/tutor`);
     console.log(process.env.BACKEND_URL);
     const data = await res.json();
     return data;
@@ -74,7 +74,7 @@ export const getTutor = async (
 };
 export const getTutorByUserId = async (id: string) => {
   try {
-    const res = await fetch(`https://tutorial-link-backend.vercel.app/api/tutor/tutorid/${id}`);
+    const res = await fetch(`https://tutorial-link-backend-ten.vercel.app/api/tutor/tutorid/${id}`);
     const data = await res.json();
     return data;
   } catch (error) {
@@ -85,7 +85,7 @@ export const getTutorByUserId = async (id: string) => {
 export const getTutorByTutorId = async (id: string) => {
   console.log( "test", id);
   try {
-    const res = await fetch(`https://tutorial-link-backend.vercel.app/api/tutor/${id}`);
+    const res = await fetch(`https://tutorial-link-backend-ten.vercel.app/api/tutor/${id}`);
     const data = await res.json();
     return data;
   } catch (error) {
@@ -98,7 +98,7 @@ export const getTutorByTutorId = async (id: string) => {
 
 
 export const getAllTutor = async()=>{
-  const res = await fetch ('https://tutorial-link-backend.vercel.app/api/tutor', {
+  const res = await fetch ('https://tutorial-link-backend-ten.vercel.app/api/tutor', {
     cache:"no-store",
 })
   return res.json();
@@ -108,7 +108,7 @@ export const getAllTutor = async()=>{
 
 export const getSingleTutorDetails = async(tutorId:any)=>{
   console.log('this is tutor id', tutorId);
-  const res = await fetch (`https://tutorial-link-backend.vercel.app/api/tutor/${tutorId}`,{
+  const res = await fetch (`https://tutorial-link-backend-ten.vercel.app/api/tutor/${tutorId}`,{
     next: {
       revalidate: 5,
     },

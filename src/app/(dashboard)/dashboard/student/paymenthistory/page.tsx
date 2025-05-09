@@ -57,7 +57,7 @@ const Page = () => {
   };
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center pt-20">
       <Card className="p-4 ">
         <h2 className="text-xl font-bold mb-4">Booking List</h2>
         <Table>

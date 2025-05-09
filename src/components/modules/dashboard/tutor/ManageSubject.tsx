@@ -41,7 +41,7 @@ export default function ManageSubject() {
   };
 
   return (
-   <div>
+   <div className="pt-20">
      <Card className="max-w-md mx-auto mt-10">
       <CardContent className="space-y-6 py-8">
         <h1 className="text-green-500 text-center">You can create subjects here and add them to your profile from the Manage Profile page.</h1>
