@@ -42,7 +42,7 @@ const StudentBookings = () => {
   return (
     <Table className="pt-24">
       <TableCaption className="pt-5">Your Bookings</TableCaption>
-      <TableHeader>
+      <TableHeader >
         <TableRow>
           <TableHead>Date</TableHead>
           <TableHead>Time</TableHead>
@@ -50,9 +50,9 @@ const StudentBookings = () => {
           <TableHead className="text-center">Action</TableHead>
         </TableRow>
       </TableHeader>
-      <TableBody>
+      <TableBody className="py-20">
         {bookings.map((booking, index) => (
-          <TableRow key={index}>
+          <TableRow key={index} >
             <TableCell>{format(new Date(booking.date), "PP")}</TableCell>
             <TableCell>
               {booking.timeSlot.startTime} - {booking.timeSlot.endTime}

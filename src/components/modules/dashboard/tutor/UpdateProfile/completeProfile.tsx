@@ -120,7 +120,7 @@ export default function CompleteTutorProfile() {
   }
 
   return (
-    <div className="pt-20">
+    <div className="">
       <h1 className="text-2xl text-center font-bold my-10 ">
         Complete your profile first
       </h1>
