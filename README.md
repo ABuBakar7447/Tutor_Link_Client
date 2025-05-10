@@ -1,18 +1,18 @@
 # 📚 Book Shop Application
 
-A full-featured Book Shop web application with secure authentication, role-based dashboards, product management, and seamless user experience.
+A full-featured Find Tutor web application with secure authentication, role-based dashboards, Tutor management, and seamless user experience.
 
 ---
 
 ## 🔍 Project Overview & Objective
 
-Create a Book Shop application with user-friendly features, secure authentication, and smooth product management. Ensure the platform is responsive, error-free, and visually appealing.
+Create a Find Best Tutot application with user-friendly features, secure authentication, and smooth product management. Ensure the platform is responsive, error-free, and visually appealing.
 
 ---
 
 ## 🚀 Live Demo
 
-🔗 [View Live Application](https://tutor-client-amber.vercel.app/)
+🔗 [View Live Application](https://tutor-link-client-nine.vercel.app/)
 
 ---
 
